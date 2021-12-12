@@ -1,0 +1,69 @@
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/images/landing_page.jpg');
+  background-size: cover;
+  opacity: .75;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  background-color: rgb(211, 205, 205);
+  width: 70vw;
+  height: 70px;
+  padding: 15px 0 10px;
+  top: 25%;
+  left: 15%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  line-height: .8;
+}
+
+.title h2 {
+  line-height: .2;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* media queries */
+@media screen and (min-width: 576px) {
+  .title {
+    width: 382px;
+    height: 100px;
+    padding: 20px 0 8px;
+    left: calc(50% - 191px);
+  }
+
+  .title h1 {
+    font-size: 70px;
+  }
+
+  .title h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .title {
+    width: 600px;
+    height: 130px;
+    left: calc(50% - 300px);
+    border-radius: 8px;
+  }
+
+  .title h1 {
+    font-size: 100px;
+  }
+
+  .title h2 {
+    font-size: 40px;
+  }
+}
