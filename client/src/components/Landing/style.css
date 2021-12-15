@@ -28,9 +28,43 @@
 
 .title h2 {
   line-height: .2;
-  font-family: 'MonteCarlo', cursive;
-  font-size: 24px;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 18px;
   font-weight: normal;
+  padding-top: 6px;
+}
+
+.link-flex {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 28vh;
+  top: 45%;
+  justify-content: center;
+  align-items: center;
+  color:rgb(121, 45, 45);
+  text-align: center;
+}
+
+.shop-link {
+  background-color: rgba(211, 205, 205, 0.5);
+  padding: 10px;
+}
+
+.shop-link p {
+  display: block;
+  font-family: 'Indie Flower', cursive;
+  font-size: 28px;
+}
+
+.shop-link i {
+  transition: transform, .5s;
+  color: rgb(121, 45, 45);
+}
+
+.shop-link i:hover {
+  cursor: pointer;
+  transform: translateY(10px);
 }
 
 /* media queries */
@@ -47,7 +81,7 @@
   }
 
   .title h2 {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
@@ -64,6 +98,14 @@
   }
 
   .title h2 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .link-flex {
+    top: 50%;
+  }
+
+  .shop-link {
+    padding: 20px;
   }
 }
